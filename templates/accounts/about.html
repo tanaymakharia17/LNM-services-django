@@ -1,0 +1,199 @@
+{% extends 'common/base_navbar.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Team</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+    .team-boxed {
+      color: #313437;
+      background-color: #eef4f7;
+    }
+
+    .team-boxed p {
+      color: #7d8285;
+    }
+
+    .team-boxed h2 {
+      font-weight: bold;
+      margin-bottom: 40px;
+      padding-top: 40px;
+      color: inherit;
+    }
+
+    @media (max-width:767px) {
+      .team-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px;
+      }
+    }
+
+    .team-boxed .intro {
+      font-size: 16px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .team-boxed .intro p {
+      margin-bottom: 0;
+    }
+
+    .team-boxed .people {
+      padding: 50px 0;
+    }
+
+    .team-boxed .item {
+      text-align: center;
+
+    }
+
+    .team-boxed .item .box {
+      text-align: center;
+      padding: 30px;
+      background-color: #fff;
+      margin-bottom: 30px;
+    }
+
+    .team-boxed .item .name {
+      font-weight: bold;
+      margin-top: 28px;
+      margin-bottom: 8px;
+      color: inherit;
+    }
+
+    .team-boxed .item .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #d0d0d0;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .team-boxed .item .description {
+      font-size: 15px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .team-boxed .item img {
+      max-width: 160px;
+    }
+
+    .team-boxed .social {
+      font-size: 18px;
+      color: #a2a8ae;
+    }
+
+    .team-boxed .social a {
+      color: inherit;
+      margin: 0 10px;
+      display: inline-block;
+      opacity: 0.7;
+    }
+
+    .team-boxed .social a:hover {
+      opacity: 1;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="about-section">
+    <h1>About Us </h1>
+    <p>We are a team of 3 motivated Developers</p>
+
+  </div>
+  <div class="team-boxed">
+    <div class="container">
+      <!-- <div class="intro">
+                <h2 class="text-center">Team </h2>
+                <p class="text-center">We are the team of 3 creative persons.</p>
+            </div> -->
+      <div class="row people">
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box"><img class="rounded-circle" src="https://i.ibb.co/1sYX0Xd/pp-1.jpg">
+            <h3 class="name">Rishi Raj Yadav</h3>
+            <p class="title">FrontEnd Developer and Data Analyst</p>
+            <p class="description">
+              B.tech Computer Science<br>
+              LNMIIT<br>
+              E-Mail:19ucs045@lnmiit.ac.in
+            </p>
+            <div class="social">
+
+              <a href="https://github.com/rishiraj9211"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+              <a href="https://www.linkedin.com/in/rishiraj-yadav-605a201a2/"><i style="font-size:24px"
+                  class="fa">&#xf0e1;</i></a>
+              <a href="mailto:19ucs045@lnmiit.ac.in"><i style="font-size:24px" class="fa">&#xf0e0;</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box"><img class="rounded-circle"
+              src="https://i.ibb.co/9TRqwLL/13413388-1727002590910995-508369820-a.jpg">
+            <h3 class="name">Tanay Makharia</h3>
+            <p class="title">BackEnd Developer,Competative programmer</p>
+            <p class="description">
+              B.tech Computer Science<br>
+              LNMIIT<br>
+              E-mail:19ucs122@lnmiit.ac.in
+            </p>
+            <div class="social">
+
+              
+
+              <a href="https://github.com/tanaymakharia2000"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+              <a href="https://www.linkedin.com/in/tanay-makharia-899225195/"><i style="font-size:24px"
+                  class="fa">&#xf0e1;</i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box"><img class="rounded-circle" src="https://i.ibb.co/ph92srB/pp.jpg">
+            <h3 class="name">Raja Kumar Singh</h3>
+            <p class="title">Backend Developer(Django)</p>
+            <p class="description">
+              B.tech Computer Science<br>
+              LNMIIT<br>
+              E-Mail:19ucc019@lnmiit.ac.in
+            </p>
+            <div class="social">
+
+              <a href="https://twitter.com/rajakumarsinghh"><i class="fa fa-twitter"></i></a>
+
+              <a href="https://github.com/cyb3rb34s7"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+              <a href="https://www.linkedin.com/in/rajakumarsinghh/"><i style="font-size:24px"
+                  class="fa">&#xf0e1;</i></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+{% endblock %}

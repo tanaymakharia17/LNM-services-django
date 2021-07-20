@@ -1,0 +1,81 @@
+{% extends 'common/base_navbar.html' %}
+{% load static %}
+{% block content %}
+<style>
+    body {
+        background: white;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-color: black;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: #dc3545;
+        color: white;
+        border: 2px solid #dc3545;
+    }
+
+    .button1:hover {
+        background-color: white;
+        color: #dc3545;
+    }
+
+
+
+
+
+
+
+    .labels {
+        font-size: 16px
+    }
+</style>
+<div class="container rounded bg-white mt-5 mb-5">
+    <h1>Edit Your Profile</h1>
+    <div class="row"><br /><br /><br />
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <form method="POST" action="{% url 'profile' %}">
+                    {% csrf_token %}
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Name</label><input style="width:40rem;" type="text"
+                                class="form-control" value={{account.user_name}} name="user_name" readonly></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Mobile Number</label><input style="width:40rem;"
+                                type="text" class="form-control" value={{account.phone_num}} name="phone_num"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Email ID</label><input style="width:40rem;"
+                                type="text" class="form-control" value={{account.email}} name="email"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Password</label><input style="width:40rem;"
+                                type="text" class="form-control" value={{account.password}} name="password"></div>
+                    </div>
+                    <br />
+                    <div style="width:39rem;" class="mt-5 text-center"><button class="button button1" type="submit">Save
+                            Changes</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
