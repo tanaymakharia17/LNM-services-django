@@ -6,7 +6,6 @@ product).
 - LNM-taxi: Place details about your ride on information wall(add and remove), find people to share cab rides.
 - Profile: Update profile information, password recovery, contact us.
 
-Website deployed at: https://shopapp-django.herokuapp.com
 
 
 https://user-images.githubusercontent.com/55875294/126967013-19b52784-147f-44e8-bf1b-e81cd800ee39.mp4
